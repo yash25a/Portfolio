@@ -143,6 +143,75 @@ body {
   }
 }
 
+/* ================= PROJECTS ================= */
+.projects {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 35px;
+  font-weight: 600;
+  animation: fadeUp 1s ease forwards;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* Project Card */
+.project-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 18px;
+  padding: 25px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeUp 1s ease forwards;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(255, 191, 47, 0.15);
+}
+
+.project-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.project-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Skills Pills */
+.skills {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skills span {
+  font-size: 12px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255, 191, 47, 0.12);
+  color: var(--accent);
+  border: 1px solid rgba(255, 191, 47, 0.3);
+}
+
 /* ================= RESPONSIVE ================= */
 @media (max-width: 600px) {
   .hero h1 {
@@ -153,4 +222,5 @@ body {
     flex-direction: column;
     gap: 18px;
   }
+
 }
